@@ -1,5 +1,3 @@
-using Solipsist;
-using Solipsist.Models;
 using System.Collections.Generic;
 using UnityEngine;
 

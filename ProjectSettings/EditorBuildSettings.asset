@@ -8,11 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OculusSample.unity
     guid: fb33b51e716e50249bce1c8935ea068c
+  - enabled: 1
+    path: Assets/Scenes/AVPSample.unity
+    guid: 05341bbfb23ce42978c0451b86050cb6
+  - enabled: 0
+    path: Assets/Samples/PolySpatial/Scenes/SpatialUI.unity
+    guid: 6f4448466bfd94eed8847ae973dbc228
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 00fb669c6076d7c4796eed06eb5fb47c, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5e052187a126d3e46b72bedd245bd9c3, type: 2}
+    UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: f63ecab320f0140b394b9e588d75712f, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: afd3d9a5357bf48ecba9367620faebd3, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 086a4cd49375cab43a65aac309902880, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 8f63e27f853532c4e816657ba611b03a, type: 2}
