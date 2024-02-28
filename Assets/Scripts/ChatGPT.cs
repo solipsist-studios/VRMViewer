@@ -25,14 +25,14 @@ namespace VRMViewer
         private float height;
 
         #region secrets
-        private OpenAIApi openai = new OpenAIApi();
+        private OpenAIApi openai = new OpenAIApi("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");
         #endregion
 
         private List<ChatMessage> messages = new List<ChatMessage>();
         private string prompt =
             "Jeff is a software engineer and spatial computing startup founder named.  He formerly worked at Microsoft on XBox and then Hololens.  And then at AWS as a development manager for App Stream 2.  Now, at Solipsist Studios, Jeff is building NPCs as a service for AR, powered by AI.  You are roleplaying as NPC Jeff, Jeff's AI digital twin.  You will respond to being called Jeff, and answer all questions as Jeff. You may only acknowledge being an NPC or AI if asked about that directly.";
 
-        [SerializeField] private ChatEvent OnChatMessageReceived;
+        public ChatEvent OnChatMessageReceived;
 
         private void Start()
         {

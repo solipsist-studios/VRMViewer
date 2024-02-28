@@ -40,15 +40,15 @@ namespace Whisper.Samples
             
             microphoneRecord.OnRecordStop += OnRecordStop;
             
-            languageDropdown.value = languageDropdown.options
-                .FindIndex(op => op.text == whisper.language);
-            languageDropdown.onValueChanged.AddListener(OnLanguageChanged);
+            //languageDropdown.value = languageDropdown.options
+            //    .FindIndex(op => op.text == whisper.language);
+            //languageDropdown.onValueChanged.AddListener(OnLanguageChanged);
 
-            translateToggle.isOn = whisper.translateToEnglish;
-            translateToggle.onValueChanged.AddListener(OnTranslateChanged);
+            //translateToggle.isOn = whisper.translateToEnglish;
+            //translateToggle.onValueChanged.AddListener(OnTranslateChanged);
 
-            vadToggle.isOn = microphoneRecord.vadStop;
-            vadToggle.onValueChanged.AddListener(OnVadChanged);
+            //vadToggle.isOn = microphoneRecord.vadStop;
+            //vadToggle.onValueChanged.AddListener(OnVadChanged);
         }
 
         private void OnVadChanged(bool vadStop)
@@ -86,7 +86,7 @@ namespace Whisper.Samples
 
             var time = sw.ElapsedMilliseconds;
             var rate = recordedAudio.Length / (time * 0.001f);
-            timeText.text = $"Time: {time} ms\nRate: {rate:F1}x";
+            //timeText.text = $"Time: {time} ms\nRate: {rate:F1}x";
 
             var text = res.Result;
             if (printLanguage)

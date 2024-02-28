@@ -2367,21 +2367,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whisper: {fileID: 788005448}
   microphoneRecord: {fileID: 788005446}
-  streamSegments: 1
-  printLanguage: 1
+  streamSegments: 0
+  printLanguage: 0
   buttonText: {fileID: 1734492641}
   timeText: {fileID: 0}
   languageDropdown: {fileID: 0}
   translateToggle: {fileID: 0}
   vadToggle: {fileID: 0}
-  scroll: {fileID: 0}
+  scroll: {fileID: 1923669810}
   OnTextProcessed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 507064050}
         m_TargetAssemblyTypeName: VRMViewer.ChatGPT, Assembly-CSharp
         m_MethodName: SendReply
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2396,7 +2396,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 3484728194415040873}
     m_Modifications:
     - target: {fileID: -5694092435888646316, guid: 0cfb0656a3cbc4d4fbb8f2b7505f533f, type: 3}
       propertyPath: m_DirtyAABB
@@ -5417,6 +5417,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1915619353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5159078012444724336, guid: 0cfb0656a3cbc4d4fbb8f2b7505f533f, type: 3}
+  m_PrefabInstance: {fileID: 894149268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1923669809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7731,22 +7736,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1241077074982218644
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6813448705531818847}
-  m_Layer: 0
-  m_Name: 'ExternalReceiver (Missing Prefab with guid: 86b1e8192cb57cd47890882526664df1)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1253172373822528612
 GameObject:
   m_ObjectHideFlags: 0
@@ -9442,6 +9431,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1915619353}
   - {fileID: 8240949946713242331}
   m_Father: {fileID: 6996818206418417300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12043,21 +12033,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &6813448705531818847
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241077074982218644}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6996818206418417300}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6843664855334334899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12141,7 +12116,6 @@ Transform:
   m_Children:
   - {fileID: 7391260673327922542}
   - {fileID: 3484728194415040873}
-  - {fileID: 6813448705531818847}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &6996818206418417301
@@ -14115,7 +14089,6 @@ SceneRoots:
   - {fileID: 1315774260}
   - {fileID: 1914567741}
   - {fileID: 774587741}
-  - {fileID: 894149268}
   - {fileID: 668430642}
   - {fileID: 507064051}
   - {fileID: 788005447}
